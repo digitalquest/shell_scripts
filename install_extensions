@@ -1,0 +1,18 @@
+#!/bin/sh
+cd /data/www/html/
+
+#changes the current directory into the mod folder
+cd mod
+
+#creates a new subdirectory certificate and makes a local clone of vanilla Certificate repository.
+git clone https://github.com/markn86/moodle-mod_certificate.git certificate
+
+#
+cd certificate
+
+#creates a new local branch that will track the remote branch with a Certificate version for Moodle 2.6.
+git checkout -b MOODLE_26_STABLE origin/MOODLE_26_STABLE 
+
+#deletes the master that was created automatically by git-clone 
+#as we do not want it in this production checkout.
+git branch -d master

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#cd to the web root directory.
+cd /data/www/html
+
+#Initialize empty Git repository
+git init
+
+#add moodle.org as remote repository. 
+git remote add moodle git://git.moodle.org/moodle.git
+git fetch moodle
+
+#lists all available branches. 
+git branch -a
+
+#create a new local branch called MOODLE_26_STABLE
+#and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
+git branch --track MOODLE_26_STABLE origin/MOODLE_26_STABLE 
+
+#Switches to the newly created local branch.
+git checkout MOODLE_26_STABLE  
