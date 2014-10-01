@@ -1,16 +1,9 @@
 #!/bin/sh
 cd /data/www/html
-#register the upstream remote
-#if it doesn't already exists
-git remote add upstream git://git.moodle.org/moodle.git
-#register the origin remote
-#if it doesn't already exists
-git remote add origin git@actechlab.warwick.ac.uk:uxxxxxxx/moodle.git
-
-#keep the standard Moodle branches at actechlab Github repository synced with the upstream repository.
-#oringin is git@actechlab.warwick.ac.uk:uxxxxxxxx/moodle.git
+#keep the standard Moodle branch at actechlab repository synced with the upstream repository.
+#actechlab is git@actechlab.warwick.ac.uk:moodle/moodle_code.git
 #upstream is git://git.moodle.org/moodle.git
-git fetch upstream
-for BRANCH in MOODLE_{19..27}_STABLE master; do
-       git push origin refs/remotes/upstream/$BRANCH:$BRANCH
+for BRANCH in MOODLE_26_STABLE; do
+	git fetch upstream $BRANCH
+	git push actechlab refs/remotes/upstream/$BRANCH:$BRANCH
 done

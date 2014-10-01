@@ -1,0 +1,4 @@
+#!/bin/sh
+#cd $HOME/public_html
+cd data/www/html
+git push actechlab MOODLE_26_STABLE
