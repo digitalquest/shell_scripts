@@ -17,7 +17,7 @@ git branch -a
 
 #create a new local branch called MOODLE_26_STABLE
 #and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
-git branch --track MOODLE_26_STABLE origin/MOODLE_26_STABLE 
+git branch --track MOODLE_26_STABLE moodle/MOODLE_26_STABLE 
 
 #Switches to the newly created local branch.
 git checkout MOODLE_26_STABLE
@@ -28,3 +28,9 @@ git branch -d master
 #register the actechlab remote
 git remote add actechlab git@actechlab.warwick.ac.uk:moodle/moodle_code.git
 
+#exclude jobe directory - which will be created later
+touch .gitignore
+echo "jobe/**/*" >> .gitignore
+
+#track .gitignore
+git add .gitignore
