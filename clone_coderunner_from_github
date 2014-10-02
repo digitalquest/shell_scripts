@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /data/www/html/local
+git clone https://github.com/trampgeek/CodeRunner.git

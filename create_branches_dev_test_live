@@ -1,7 +1,0 @@
-#!/bin/sh
-
-#cd to the web root directory.
-cd /data/www/html
-git branch dev
-git branch test
-git branch live

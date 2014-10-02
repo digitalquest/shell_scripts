@@ -1,6 +1,5 @@
 #!/bin/sh
-#cd $HOME/public_html
 cd /data/www/html
-for BRANCH in (dev, test, live); do
+for BRANCH in (devbranch, testbranch, prodbranch); do
 git push actechlab $BRANCH:$BRANCH
 done
