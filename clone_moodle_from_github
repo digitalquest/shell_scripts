@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#cd to the web root directory.
+cd /data/www/html
+
+#Initialize empty Git repository
+git init
+
+#add moodle.org as remote repository. 
+git remote add moodle git://git.moodle.org/moodle.git
+#register the moodle.org remote repository with the name upstream
+git remote add upstream git://git.moodle.org/moodle.git
+git fetch moodle
+
+#lists all available branches. 
+git branch -a
+
+#create a new local branch called MOODLE_26_STABLE
+#and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
+git branch --track MOODLE_26_STABLE moodle/MOODLE_26_STABLE 
+
+#Switches to the newly created local branch.
+git checkout MOODLE_26_STABLE
+
+#deletes the master that was created automatically by git-clone 
+git branch -d master
+
+#register the actechlab remote
+git remote add actechlab git@actechlab.warwick.ac.uk:moodle/moodle_code.git
+
+#exclude jobe directory - which will be created later
+touch .gitignore
+echo "jobe/**/*" >> .gitignore
+
+#track .gitignore
+git add .gitignore

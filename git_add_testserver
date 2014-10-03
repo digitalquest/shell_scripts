@@ -1,2 +1,0 @@
-#!/bin/sh
-git remote add testserver git@testserver.warwick.ac.uk/moodle.git

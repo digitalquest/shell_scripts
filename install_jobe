@@ -1,9 +1,5 @@
 #!/bin/sh
 
-#clone the project in the web root directory
-cd /data/www/html
-git clone https://github.com/trampgeek/jobe.git
-
 cd /data/www/html/jobe
 
 #Installation is performed by the install script, which must be run as root 

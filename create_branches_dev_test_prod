@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#cd to the web root directory.
+cd /data/www/html
+#create local Moodle branches
+git branch devbranch
+git branch testbranch
+git branch prodbranch

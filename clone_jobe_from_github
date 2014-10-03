@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#clone the project in the web root directory
+cd /data/www/html
+git clone https://github.com/trampgeek/jobe.git
+
+#add jobe directory to my gitignore
+#so that it's not included in the git repo
+echo "jobe/*" >> .gitignore
+
+cd /data/www/html/jobe
+#add actechlab remote
+git remote add actechlab git@actechlab.warwick.ac.uk:moodle/jobe.git
+git push actechlab

@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /data/www/html
+#ntegration is git@actechlab.warwick.ac.uk:moodle/integration.git
+git push integration 
+
+cd /data/www/html/local/jobe
+git push integration 
