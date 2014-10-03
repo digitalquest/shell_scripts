@@ -34,13 +34,14 @@ git remote add production git@actechlab.warwick.ac.uk:techteam/moodle_production
 git remote add sammy_moodle git@actechlab.warwick.ac.uk:techteam/sammy_moodle.git
 
 echo "the following repositories where added:"
-git remote -v
+#git remote -v
+git remote
 
-#exclude jobe directory - which will be created later
+#exclude Coderunner directory - which will be created later
 touch .gitignore
-echo "jobe/**/*" >> .gitignore
+echo "local/Coderunner/**/*" >> .gitignore
 #track .gitignore so that it is pushed to the repositories
 git add .gitignore
 
-echo "jobe/**/* was added to .gitignore"
+echo "local/Coderunner/**/* was added to .gitignore"
 echo "<<<<<< All done >>>>>"
