@@ -4,6 +4,5 @@ cd /data/www/html
 #ntegration is git@actechlab.warwick.ac.uk:moodle/integration.git
 #upstream is git://git.moodle.org/moodle.git
 git fetch upstream
-for BRANCH in MOODLE_26_STABLE; do
-	git push integration refs/remotes/upstream/$BRANCH:$BRANCH
-done
+BRANCH=MOODLE_26_STABLE
+git push integration refs/remotes/upstream/$BRANCH:$BRANCH
