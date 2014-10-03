@@ -1,6 +1,0 @@
-#!/bin/sh
-
-#change to where the file testsubmit.py is.
-# in testsubmit.py, edit the line JOBE_SERVER = 'localhost' (if you test on a remote client)
-cd /data/www/html/jobe
-python3 testsubmit.py

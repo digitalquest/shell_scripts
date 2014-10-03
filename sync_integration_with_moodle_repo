@@ -1,9 +1,0 @@
-#!/bin/sh
-cd /data/www/html
-#keep the standard Moodle branch at actechlab repository synced with the upstream repository.
-#ntegration is git@actechlab.warwick.ac.uk:moodle/integration.git
-#upstream is git://git.moodle.org/moodle.git
-git fetch upstream
-for BRANCH in MOODLE_26_STABLE; do
-	git push integration refs/remotes/upstream/$BRANCH:$BRANCH
-done

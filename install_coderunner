@@ -1,5 +1,0 @@
-#!/bin/sh
-
-cd /data/www/html/local
-cd CodeRunner
-sudo ./install

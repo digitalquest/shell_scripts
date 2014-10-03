@@ -1,7 +1,0 @@
-#!/bin/sh
-cd /data/www/html
-#keep production repository synced with the integration repository.
-#ntegration is git@actechlab.warwick.ac.uk:moodle/integration.git
-#production is git@actechlab.warwick.ac.uk:moodle/production.git
-git fetch integration
-git push production refs/remotes/integration/$BRANCH:$BRANCH
