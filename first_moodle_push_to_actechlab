@@ -1,6 +1,0 @@
-#!/bin/sh
-#cd $HOME/public_html
-cd data/www/html
-#first push so add actechlab
-git remote add actechlab git@actechlab.warwick.ac.uk:moodle/moodle_code.git
-git push actechlab MOODLE_26_STABLE

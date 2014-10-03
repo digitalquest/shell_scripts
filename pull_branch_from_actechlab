@@ -1,3 +1,0 @@
-git clone --branch devbranch git@actechlab.warwick.ac.uk:moodle/moodle_code.git
-#git clone --branch testbranch git@actechlab.warwick.ac.uk:moodle/moodle_code.git
-#git clone --branch prodbranch git@actechlab.warwick.ac.uk:moodle/moodle_code.git

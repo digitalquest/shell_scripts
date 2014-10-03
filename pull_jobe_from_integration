@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ~/github/moodle/mod
+git clone git@actechlab.warwick.ac.uk:techteam/jobe.git
