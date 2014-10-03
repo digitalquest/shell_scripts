@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /data/www/html
+#
+git clone git://github.com/maths/moodle-qtype_stack.git question/type/stack

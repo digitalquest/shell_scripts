@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /data/www/html
+#Obtain Deferred feedback with explicit validation behaviour
+git clone git://github.com/maths/moodle-qbehaviour_dfexplicitvaildate.git question/behaviour/dfexplicitvaildate
+#Obtain Deferred feedback with CBM and explicit validation behaviour
+git://github.com/maths/moodle-qbehaviour_dfcbmexplicitvaildate.git question/behaviour/dfcbmexplicitvaildate
+#Obtain adaptivemutlipart behaviour
+git clone git://github.com/maths/moodle-qbehaviour_adaptivemultipart.git
+
