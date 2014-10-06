@@ -13,28 +13,16 @@ git init
 git remote add moodle git://git.moodle.org/moodle.git
 #register the moodle.org remote repository with the name upstream
 git remote add upstream git://git.moodle.org/moodle.git
-git fetch moodle
-
-#lists all available branches. 
-echo "lists of all available branches." 
-git branch -a
-
-#create a new local branch called MOODLE_26_STABLE
-#and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
-git branch --track MOODLE_26_STABLE moodle/MOODLE_26_STABLE 
-
-#Switches to the newly created local branch.
-git checkout MOODLE_26_STABLE
 
 #add actechlab integration repository
 git remote add integration git@actechlab.warwick.ac.uk:techteam/moodle_integration.git
 #add actechlab production repository
 git remote add production git@actechlab.warwick.ac.uk:techteam/moodle_production.git
 #add personal moodle repositories
+#change to your personal repo
 git remote add sammy_moodle git@actechlab.warwick.ac.uk:techteam/sammy_moodle.git
 
 echo "the following repositories where added:"
-#git remote -v
 git remote
 
 #exclude Coderunner directory - which will be created later
@@ -44,4 +32,15 @@ echo "local/Coderunner/**/*" >> .gitignore
 git add .gitignore
 
 echo "local/Coderunner/**/* was added to .gitignore"
+
+git fetch integration
+#lists all available branches. 
+echo "lists of all available branches." 
+git branch -a
+#create a new local branch called MOODLE_26_STABLE
+#and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
+git branch --track MOODLE_26_STABLE moodle/MOODLE_26_STABLE 
+#Switches to the newly created local branch.
+git checkout MOODLE_26_STABLE
+
 echo "<<<<<< All done >>>>>"
