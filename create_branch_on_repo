@@ -1,0 +1,5 @@
+#!/bin/sh
+BRANCH=MOODLE_26_STABLE
+REPO=integration
+git checkout $BRANCH
+git push $REPO $BRANCH:$BRANCH
