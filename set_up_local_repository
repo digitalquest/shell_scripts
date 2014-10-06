@@ -39,8 +39,9 @@ echo "lists of all available branches."
 git branch -a
 #create a new local branch called MOODLE_26_STABLE
 #and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
-git branch --track MOODLE_26_STABLE moodle/MOODLE_26_STABLE 
+#git branch --track MOODLE_26_STABLE integration/MOODLE_26_STABLE 
 #Switches to the newly created local branch.
-git checkout MOODLE_26_STABLE
+#git checkout MOODLE_26_STABLE
+git checkout master
 
 echo "<<<<<< All done >>>>>"
