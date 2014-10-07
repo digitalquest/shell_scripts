@@ -6,7 +6,3 @@ cd book
 git checkout -b MOODLE_26_STABLE origin/MOODLE_26_STABLE
 git branch -d master
 #
-cd /data/www/html/
-echo /mod/book/ >> .git/info/exclude
-touch .gitignore
-echo /mod/book/ >> .gitignore
