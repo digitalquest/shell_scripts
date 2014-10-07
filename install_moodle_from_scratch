@@ -17,21 +17,8 @@ git pull moodle $BRANCH
 chmod -R 0755 $PATH_TO_MOODLE
 find $PATH_TO_MOODLE -type f -exec chmod 0644 {} \;
 
-#If you want to use the built-in plugin installer you need to make the directory writable by web server user.
-# use ACL when your server supports it
-#chmod -R +a "'$WEB_SERVER_USER' allow read,delete,write,append,file_inherit,directory_inherit" $PATH_TO_MOODLE
-
 #Create the (moodledata) data directory
 mkdir $MOODLE_DATA
 chmod 0777 $MOODLE_DATA
-#it is recommended to set following permissions
-#chmod -R +a "'$WEB_SERVER_USER' allow read,delete,write,append,file_inherit,directory_inherit" $MOODLE_DATA
-
-#If you are planning to execute PHP scripts from the command line you should set the same permissions for the current user:
-#use ACL when your server supports it
-#sudo chmod -R +a "'whoami' allow read,delete,write,append,file_inherit,directory_inherit" $MOODLE_DATA
-
-#Securing moodledata in a web directory
-#This does not work on all systems - see your host/administrator.
 
 echo "<<<< ALL DONE >>>>"
