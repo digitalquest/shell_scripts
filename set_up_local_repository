@@ -25,14 +25,6 @@ git remote add sammy_moodle git@actechlab.warwick.ac.uk:techteam/sammy_moodle.gi
 echo "the following repositories where added:"
 git remote
 
-#exclude Coderunner directory - which will be created later
-touch .gitignore
-echo "local/Coderunner/**/*" >> .gitignore
-#track .gitignore so that it is pushed to the repositories
-git add .gitignore
-
-echo "local/Coderunner/**/* was added to .gitignore"
-
 git fetch integration
 #lists all available branches. 
 echo "lists of all available branches." 
@@ -41,7 +33,6 @@ git branch -a
 #and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
 #git branch --track MOODLE_26_STABLE integration/MOODLE_26_STABLE 
 #Switches to the newly created local branch.
-#git checkout MOODLE_26_STABLE
-git checkout master
+git checkout MOODLE_26_STABLE
 
 echo "<<<<<< All done >>>>>"
