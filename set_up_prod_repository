@@ -2,41 +2,41 @@
 
 #SETS UP THE PRODUCTION REPOSITORY
 #DESIGNED TO BE USED FROM THE MOODLE TEST SEVER
-BRANCH=MOODLE_26_STABLE
-
-#cd to <moodle main> directory.
 #change things according to your settings
-cd data/www/html
+BRANCH=MOODLE_26_STABLE
+PATH_TO_MOODLE=/data/www/html
+WEBROOT=/data/www/html
+
+cd $PATH_TO_MOODLE
 #add the production remote repository
-git add remote production git@actechlab.warwick.ac.uk:techteam/moodle_production.git
+git remote add production git@actechlab.warwick.ac.uk:techteam/moodle_production.git
 
 #
 git checkout $BRANCH
 git tag -a version1 -m "first copy from test server to be used on the production machine" 
-git push production $BRANCH
+git push --tags production $BRANCH
 
 #Install Coderunner
-cd local
+cd $PATH_TO_MOODLE/local
 #clone from github
 git clone https://github.com/trampgeek/CodeRunner.git
 #cd CodeRunner
 #sudo ./install
 
 #change to moodle directory
-cd data/www/html
+cd $PATH_TO_MOODLE
 git commit -am "Cloned CodeRunner from github"
 git tag -a version1+coderunner -m 'version1 with CodeRunner'
 
 #install Jobe (for CodeRunner)
-#cd WEBROOT
-cd data/www/html
+cd $WEBROOT
 git clone https://github.com/trampgeek/jobe.git
+#sudo ./install
+cd $PATH_TO_MOODLE
 git commit -am "Cloned Jobe from github"
 git tag -a version1+coderunner+jobe -m 'version1 with CodeRunner and Jobe'
-#sudo ./install
 
 #push all to production repository
-cd data/www/html
-git push production $BRANCH
+git push --tags production $BRANCH
 
 echo "<<<<<< All done >>>>>"

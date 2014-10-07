@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#ADD JOBE
+#DESIGNED TO BE USED FROM A WEB SEVER
+#change things according to your settings
+BRANCH=MOODLE_26_STABLE
+PATH_TO_MOODLE=/data/www/html
+WEBROOT=/data/www/html
+
+
+#install Jobe (for CodeRunner)
+cd $WEBROOT
+git clone https://github.com/trampgeek/jobe.git
+git commit -am "Cloned Jobe from github"
+git tag -a version1+coderunner+jobe -m 'version1 with CodeRunner and Jobe'
+#sudo ./install
+
+#push all to production repository
+cd $PATH_TO_MOODLE
+git push --tags production $BRANCH
+
+echo "<<<<<< All done >>>>>"

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#++++++ SETS UP THE PRODUCTION SERVER ++++++ 
+#++++++ ONE TIME USE ONLY ++++++
+#change things according to your settings
+BRANCH=MOODLE_26_STABLE
+PATH_TO_MOODLE=/data/www/html
+WEBROOT=/data/www/html
+
+cd $PATH_TO_MOODLE
+
+git init
+#add the production remote repository
+git remote add production git@actechlab.warwick.ac.uk:techteam/moodle_production.git
+echo " Added the following repos: "
+git remote
+#
+git fetch production
+git checkout $BRANCH
+
+echo " <<<< ///////////////////// >>>> "
+echo " <<<< Checked out '$BRANCH' >>>> "
+echo " <<<< //////////////////// >>>> "
