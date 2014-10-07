@@ -4,4 +4,5 @@ cd /data/www/html
 #ntegration is git@actechlab.warwick.ac.uk:moodle/integration.git
 #production is git@actechlab.warwick.ac.uk:moodle/production.git
 git fetch integration
+BRANCH=MOODLE_26_STABLE
 git push production refs/remotes/integration/$BRANCH:$BRANCH

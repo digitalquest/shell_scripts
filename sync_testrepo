@@ -1,7 +1,0 @@
-#!/bin/sh
-#**********
-#upstream is git://git.moodle.org/moodle.git
-git fetch upstream
-BRANCH=MOODLE_26_STABLE
-git remote add testrepo git@actechlab.warwick.ac.uk:u1374759/testrepo.git
-git push testrepo refs/remotes/upstream/$BRANCH
