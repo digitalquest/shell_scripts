@@ -1,0 +1,8 @@
+#!/bin/sh
+
+MOODLE_DIR=/data/www/html
+BRANCH=MOODLE_26_STABLE
+REPO=origin
+
+cd $MOODLE_DIR
+git push $REPO --tags --all

@@ -10,17 +10,12 @@ cd ~/github/moodle
 git init
 
 #register moodle.org as remote repository. 
-git remote add moodle git://git.moodle.org/moodle.git
-#register the moodle.org remote repository with the name upstream
 git remote add upstream git://git.moodle.org/moodle.git
 
 #add actechlab integration repository
 git remote add integration git@actechlab.warwick.ac.uk:techteam/moodle_integration.git
 #add actechlab production repository
 git remote add production git@actechlab.warwick.ac.uk:techteam/moodle_production.git
-#add personal moodle repositories
-#change to your personal repo
-git remote add sammy_moodle git@actechlab.warwick.ac.uk:techteam/sammy_moodle.git
 
 echo "the following repositories where added:"
 git remote
@@ -29,6 +24,7 @@ git fetch integration
 #lists all available branches. 
 echo "lists of all available branches." 
 git branch -a
+
 #create a new local branch called MOODLE_26_STABLE
 #and set it to track the remote branch MOODLE_26_STABLE from the upstream repository.
 #git branch --track MOODLE_26_STABLE integration/MOODLE_26_STABLE 

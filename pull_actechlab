@@ -1,0 +1,9 @@
+#!/bin/sh
+
+MOODLE_DIR=/data/www/html
+BRANCH=MOODLE_26_STABLE
+REPO=origin
+
+cd $MOODLE_DIR
+git fetch --tags $REPO
+git merge $REPO/$BRANCH

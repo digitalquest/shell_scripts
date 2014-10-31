@@ -20,8 +20,8 @@ git push --tags production $BRANCH
 cd $PATH_TO_MOODLE/local
 #clone from github
 git clone https://github.com/trampgeek/CodeRunner.git
-#cd CodeRunner
-#sudo ./install
+cd CodeRunner
+sudo ./install
 
 #change to moodle directory
 cd $PATH_TO_MOODLE
@@ -31,7 +31,7 @@ git tag -a version1+coderunner -m 'version1 with CodeRunner'
 #install Jobe (for CodeRunner)
 cd $WEBROOT
 git clone https://github.com/trampgeek/jobe.git
-#sudo ./install
+sudo ./install
 cd $PATH_TO_MOODLE
 git commit -am "Cloned Jobe from github"
 git tag -a version1+coderunner+jobe -m 'version1 with CodeRunner and Jobe'
