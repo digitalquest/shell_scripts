@@ -1,0 +1,58 @@
+#
+# Update Moodle from 2.6.1 to 2.6.5
+#
+# Steps:
+# 1. cd to Moodle directory
+# 2. put site in maintenance mode
+# 3. pull changes from the Moodle official repo (detailed in git sequence)
+# 4. execute Moodle ugrade script
+# 5. disable maintenance mode
+#
+
+# change to Moodle directory and enable maintenance mode
+cd /var/www/sites/moodle/htdocs/
+/usr/bin/php admin/cli/maintenance.php --enable
+#
+#BEGIN git SEQUENCE
+#
+# create an orphan branch called MOODLE_26_GITHUB(a branch without parent commit)
+# the branch won't be used; it's just to have a 'clean' start with no parent commit.
+git checkout --orphan MOODLE_26_GITHUB
+
+# delete all the files in the working directory; they are not needed 
+# working directory is now empty
+git rm -rf
+
+# add Moodle official repo; name it upstream
+git remote add upstream git://git.moodle.org/moodle.git
+
+# pull the branch MOODLE_26_STABLE and tags from upstream
+# working directory now contains the latest 2.6.x
+git pull --tags upstream MOODLE_26_STABLE
+
+# version 2.6.5 is needed; we reset the HEAD to the corresponding commit
+# the reset is important for the merge later
+git reset --hard v2.6.5
+
+# create branch MOODLE_265 and check it out
+git checkout -b MOODLE_265
+
+# Our Moodle 2.6.1 corresponds to the local branch MOODLE_26_STABLE
+# Moodle 2.6.5 corresponds to the local branch MOODLE_265; currently checked out.
+# we merge both branches with the following options
+# -s recursive or --strategy=recursive (see git documentation for possible stratgies)
+# -X ours or --strategy-option=ours (in case of conflicts, priority is given to our branch [MOODLE_265 / v2.6.5])
+git merge -s recursive -X ours MOODLE_26_STABLE
+
+# the current branch and the working directory now contain
+# official Moodle 2.6.5 merged with all the customisation of our Moodle 2.6.1
+
+# push our newly merged local branch to remote branch MOODLE_26_STABLE on origin
+git push -u origin MOODLE_265:MOODLE_26_STABLE
+#
+#END git SEQUENCE
+#
+
+# exucute Moodle upgrade script and disable maintenance mode
+sudo -u apache /usr/bin/php admin/cli/upgrade.php
+sudo -u apache /usr/bin/php admin/cli/maintenance.php --disable
