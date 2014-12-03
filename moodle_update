@@ -49,6 +49,13 @@ git merge -s recursive -X ours MOODLE_26_STABLE
 
 # push our newly merged local branch to remote branch MOODLE_26_STABLE on origin
 git push -u origin MOODLE_265:MOODLE_26_STABLE
+
+# branch MOODLE_26_STABLE is renamed MOODLE_261
+# current branch MOODLE_265 is renamed MOODLE_26_STABLE
+# delete branch MOODLE_26_GITHUB
+git branch -m MOODLE_26_STABLE MOODLE_261
+git branch -m MOODLE_26_STABLE
+git branch -d MOODLE_26_GITHUB
 #
 #END git SEQUENCE
 #
