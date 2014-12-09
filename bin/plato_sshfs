@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "*** Mount the folders via sshfs ***"
+sshfs admin@plato.warwick.ac.uk:/data/www/html $HOME/plato/
+echo "*** All done ***"
