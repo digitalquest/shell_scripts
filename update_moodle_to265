@@ -1,3 +1,6 @@
+# THIS IS NOT A SCRIPT
+# COPY AND PASTE ONE LINE AFTER THE OTHER
+# MAKE SURE A LINE EXECUTES WITHOUT ERROR BEFORE MOVING TO THE NEXT ONE
 #
 # Update Moodle from 2.6.1 to 2.6.5
 #
@@ -51,7 +54,7 @@ git merge -s recursive -X ours MOODLE_26_STABLE
 git push -u origin MOODLE_265:MOODLE_26_STABLE
 
 # branch MOODLE_26_STABLE is renamed MOODLE_261
-# current branch MOODLE_265 is renamed MOODLE_26_STABLE
+# current branch (MOODLE_265) is renamed MOODLE_26_STABLE
 # delete branch MOODLE_26_GITHUB
 git branch -m MOODLE_26_STABLE MOODLE_261
 git branch -m MOODLE_26_STABLE
