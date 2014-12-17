@@ -12,8 +12,22 @@
 # 5. disable maintenance mode
 #
 
-# change to Moodle directory and enable maintenance mode
-cd /var/www/sites/moodle/htdocs/
+# one way of backing up Moodle database before update/upgrade 
+# it works with our settings, as - once logged in - we do not provide username or password to use mysql
+# feel free to use your prefered way of backing up your database
+#
+cd /data/www/backup
+mv moodle-database.sql.gz moodle-database-old.sql.gz
+#mysqldump -h example.com -u myusername --password=mypassword -C -Q -e --create-options db1 > moodle-database.sql
+mysqldump -C -Q -e --create-options db1 > moodle-database.sql
+gzip moodle-database.sql
+#
+# one should also create a backup of moodledata
+# there are several method to achieve this so it's not covered here.
+
+# change to Moodle directory (change according to your setup)
+cd /data/www/html/
+# enable maintenance mode: sudo -u apache /usr/bin/php admin/cli/maintenance.php --enable
 /usr/bin/php admin/cli/maintenance.php --enable
 #
 #BEGIN git SEQUENCE
@@ -24,7 +38,7 @@ git checkout --orphan MOODLE_26_GITHUB
 
 # delete all the files in the working directory; they are not needed 
 # working directory is now empty
-git rm -rf
+git rm -rf .
 
 # add Moodle official repo; name it upstream
 git remote add upstream git://git.moodle.org/moodle.git
@@ -50,19 +64,24 @@ git merge -s recursive -X ours MOODLE_26_STABLE
 # the current branch and the working directory now contain
 # official Moodle 2.6.5 merged with all the customisation of our Moodle 2.6.1
 
+git status
+#change as needed
+git add <file>
+git commit -m "after update to 2.6.5"
 # push our newly merged local branch to remote branch MOODLE_26_STABLE on origin
 git push -u origin MOODLE_265:MOODLE_26_STABLE
 
 # branch MOODLE_26_STABLE is renamed MOODLE_261
-# current branch (MOODLE_265) is renamed MOODLE_26_STABLE
-# delete branch MOODLE_26_GITHUB
 git branch -m MOODLE_26_STABLE MOODLE_261
+# current branch (MOODLE_265) is renamed MOODLE_26_STABLE
 git branch -m MOODLE_26_STABLE
+# delete branch MOODLE_26_GITHUB
 git branch -d MOODLE_26_GITHUB
 #
 #END git SEQUENCE
 #
-
 # exucute Moodle upgrade script and disable maintenance mode
-sudo -u apache /usr/bin/php admin/cli/upgrade.php
-sudo -u apache /usr/bin/php admin/cli/maintenance.php --disable
+#sudo -u apache /usr/bin/php admin/cli/upgrade.php
+#sudo -u apache /usr/bin/php admin/cli/maintenance.php --disable
+/usr/bin/php admin/cli/upgrade.php
+/usr/bin/php admin/cli/maintenance.php --disable
