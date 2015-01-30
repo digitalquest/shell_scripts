@@ -1,8 +1,0 @@
-#!/bin/sh
-cd /data/www/html/
-cd mod
-git clone git://github.com/skodak/moodle-mod_book.git book
-cd book
-git checkout -b MOODLE_26_STABLE origin/MOODLE_26_STABLE
-git branch -d master
-#

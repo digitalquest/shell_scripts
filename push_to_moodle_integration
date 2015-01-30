@@ -1,4 +1,0 @@
-#!/bin/sh
-#change according to your directory stucture
-#cd $HOME/public_html
-git push integration MOODLE_26_STABLE
