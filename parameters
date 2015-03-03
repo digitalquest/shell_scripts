@@ -1,0 +1,11 @@
+shire=https://photos.warwick.ac.uk/photos/shire&
+providerId=urn:photos.warwick.ac.uk:photos:service&
+target=https://photos.warwick.ac.uk/photos/photo.jpg?id=1490670&
+userName=$username&
+password=$password
+
+shire=https%3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fshire&
+providerId=urn%3Aphotos.warwick.ac.uk%3Aphotos%3Aservice&
+target=https%3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fphoto.jpg%3Fid%3D1490670&
+userName=$username&
+password=$password

@@ -1,0 +1,320 @@
+== Info: Hostname was NOT found in DNS cache
+== Info:   Trying 137.205.247.145...
+== Info: Connected to websignon.warwick.ac.uk (137.205.247.145) port 443 (#0)
+== Info: successfully set certificate verify locations:
+== Info:   CAfile: none
+  CApath: /etc/ssl/certs/
+== Info: SSLv3, TLS handshake, Client hello (1):
+=> Send SSL data, 512 bytes (0x200)
+0000: ......q#.QK.W..<.$......\^e.N..n.xqi....v.0.,.(.$.........k.j.9.
+0040: 8.....2...*.&.......=.5.../.+.'.#.........g.@.3.2.....E.D.1.-.).
+0080: %.......<./...A...................].........websignon.warwick.ac
+00c0: .uk....................................... .....................
+0100: ................................................................
+0140: ................................................................
+0180: ................................................................
+01c0: ................................................................
+== Info: SSLv3, TLS handshake, Server hello (2):
+<= Recv SSL data, 98 bytes (0x62)
+0000: ...^.....\.*....-...@.s.....*.D`ux..hg .GY.Al5.6#A".Z.z.V....t..
+0040: ..}...z.0.........................
+== Info: SSLv3, TLS handshake, CERT (11):
+<= Recv SSL data, 2579 bytes (0xa13)
+0000: ..........0...0...........!..d...L.9.c.>.<.0...*.H........0b1.0.
+0040: ..U....BE1.0...U....GlobalSign nv-sa1806..U.../GlobalSign Extend
+0080: ed Validation CA - SHA256 - G20...141209113202Z..160712103502Z0.
+00c0: .1.0...U....Government Entity1.0...U....Government Entities1.0..
+0100: .+.....7<.....GB1.0...U....GB1.0...U....West Midlands1.0...U....
+0140: Coventry1.0...U....University House1.0...U....University of Warw
+0180: ick1 0...U....websignon.warwick.ac.uk0.."0...*.H.............0..
+01c0: .......<gaT....-......c3.v..B..U....m..'[xZ......Z..a..Z...#{^.
+0200: .Ho..x.{!.n<p.}...._.....H.&+.....A.y..F...a.....z..d....K.....
+0240: Z......`+r.!.af":..de.rg.........^.t......q.....tl7..Kb;.j..&.
+0280: ".2o 6d.ir..........M....C.....]UaS!...^v..G...........Wg.uS.Nd$
+02c0: ..X..O.........0...0...U...........0L..U. .E0C0A..+.....2..0402.
+0300: .+........&https://www.globalsign.com/repository/0"..U....0...we
+0340: bsignon.warwick.ac.uk0...U....0.0...U.%..0...+.........+.......0
+0380: C..U...<0:08.6.4.2http://crl.globalsign.com/gs/gsextendvalsha2g2
+03c0: .crl0....+..........0..0G..+.....0..;http://secure.globalsign.co
+0400: m/cacert/gsextendvalsha2g2r2.crt09..+.....0..-http://ocsp2.globa
+0440: lsign.com/gsextendvalsha2g20...U......C.0...u.T....3.C..D.0...U.
+0480: #..0....@wCe......d.>MC."1.0...*.H.............s..w:....k..X$...
+04c0: .|.../(........!u...I:..{.[bElo...GE.p.0.NL2...^....y.jRg.......
+0500: ...J.;...!.......@#...Y....-N..B.G.J.`.j.....<)...d.w`8.....yT4%
+0540: .3.".3R.C.B.%.j.............@......r...Y....~?..w...)....Yt@.L.
+0580: .."7..D....:.j..u...Z&....'.uL.9..A8. ..."..|...a0..]0..E......
+05c0: .......DN.JU0...*.H........0L1 0...U....GlobalSign Root CA - R21
+0600: .0...U....GlobalSign1.0...U....GlobalSign0...140220100000Z..2112
+0640: 15080000Z0b1.0...U....BE1.0...U....GlobalSign nv-sa1806..U.../Gl
+0680: obalSign Extended Validation CA - SHA256 - G20.."0...*.H........
+06c0: .....0.............I...]...B..<..L./_.+..P0f.N.O!J...N..SW...[..
+0700: FU....j....HF..........o.Q.....do.T.t.<...MC7.....7....5Z..[t..
+0740: .........MK.L+..eH..:.u.7.J.....?..`.k4 F..f.$..b........^.A....
+0780: ,.6....._..jw...2c.......0rY..r.*.w{.w....o./.z..:.{^....Y....7V
+07c0: .:S..`I'%.............(0..$0...U...........0...U.......0.......0
+0800: ...U.......@wCe......d.>MC."1.0G..U. .@0>0<..U. .0402..+........
+0840: &https://www.globalsign.com/repository/06..U.../0-0+.).'.%http:/
+0880: /crl.globalsign.net/root-r2.crl0=..+........10/0-..+.....0..!htt
+08c0: p://ocsp.globalsign.com/rootr20...U.#..0......Wg...j..Y..-.....0
+0900: ...*.H.............@....t...:..YJ3..L.+......n.ld....FYZX.R.4.TA
+0940: d ..W;..tq.6....p..Ef.q......q@...w.....J.3..t....>.Y...\..(.4{.
+0980: 8..<OqXu..Vuv.@..@9.A.d......yd.[ML.'..s^.~.H.....N.,.kM._xS...9
+09c0: ./.iO.q...m .C.....;7..?m...v...o.O$..v...M.M7../_KA.I...{l....
+0a00: T..$Q.]....S.M...w.
+== Info: SSLv3, TLS handshake, Server key exchange (12):
+<= Recv SSL data, 333 bytes (0x14d)
+0000: ...I...A..w.........U.C..3.....!....].~.g.g...8Z....L.)W\f....S.
+0040: G...ih.......O.......v.%..P.....\...RA....-..:._..'6=...5..t:8i.
+0080: P..)......Pm9d............'.H..P\.../.5,..X..L....1..b..a2..k...
+00c0: ..h.A`5*.......M..k-{d...VR.G.H...OB..f...O..7...'....cHx..=T2.t
+0100: .3..c.P}.....+.{.8.8.JY..A..t.N\>^w..........^h..;..R?...UK...x6
+0140: ...Cb$..E....
+== Info: SSLv3, TLS handshake, Server finished (14):
+<= Recv SSL data, 4 bytes (0x4)
+0000: ....
+== Info: SSLv3, TLS handshake, Client key exchange (16):
+=> Send SSL data, 70 bytes (0x46)
+0000: ...BA.2?..!...{.....@.4?...q.{.\.....o^.Q.s.#.y...p.q=PX.`......
+0040: ...y..
+== Info: SSLv3, TLS change cipher, Client hello (1):
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: SSLv3, TLS handshake, Finished (20):
+=> Send SSL data, 16 bytes (0x10)
+0000: ....;..t.qe....
+== Info: SSLv3, TLS change cipher, Client hello (1):
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: SSLv3, TLS handshake, Finished (20):
+<= Recv SSL data, 16 bytes (0x10)
+0000: .......c.I-7....
+== Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+== Info: Server certificate:
+== Info: 	 subject: businessCategory=Government Entity; serialNumber=Government Entities; 1.3.6.1.4.1.311.60.2.1.3=GB; C=GB; ST=West Midlands; L=Coventry; street=University House; O=University of Warwick; CN=websignon.warwick.ac.uk
+== Info: 	 start date: 2014-12-09 11:32:02 GMT
+== Info: 	 expire date: 2016-07-12 10:35:02 GMT
+== Info: 	 subjectAltName: websignon.warwick.ac.uk matched
+== Info: 	 issuer: C=BE; O=GlobalSign nv-sa; CN=GlobalSign Extended Validation CA - SHA256 - G2
+== Info: 	 SSL certificate verify ok.
+=> Send header, 207 bytes (0xcf)
+0000: POST /origin/hs HTTP/1.1
+001a: User-Agent: Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)
+005b: Host: websignon.warwick.ac.uk
+007a: Accept: */*
+0087: Content-Length: 232
+009c: Content-Type: application/x-www-form-urlencoded
+00cd: 
+=> Send data, 232 bytes (0xe8)
+0000: shire=https%3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fshire&provid
+0040: erId=urn%3Aphotos.warwick.ac.uk%3Aphotos%3Aservice&target=https%
+0080: 3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fphoto.jpg%3Fid%3D1490670
+00c0: &userName=u1374759&password=m1cr0d1g1t4l
+== Info: upload completely sent off: 232 out of 232 bytes
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 11 Feb 2015 16:29:47 GMT
+== Info: Server Rube Goldberg Machine is not blacklisted
+<= Recv header, 31 bytes (0x1f)
+0000: Server: Rube Goldberg Machine
+<= Recv header, 73 bytes (0x49)
+0000: Strict-Transport-Security: max-age=31536000; includeSubDomains; 
+0040: preload
+<= Recv header, 35 bytes (0x23)
+0000: X-UA-Compatible: IE=Edge,chrome=1
+<= Recv header, 51 bytes (0x33)
+0000: X-Powered-By: Servlet 2.5; JBoss-5.0/JBossWeb-2.1
+<= Recv header, 68 bytes (0x44)
+0000: Cache-Control: private,no-store,no-cache,must-revalidate,max-age
+0040: =0
+<= Recv header, 40 bytes (0x28)
+0000: Expires: Wed, 11 Feb 2015 16:24:47 GMT
+<= Recv header, 23 bytes (0x17)
+0000: P3P: CP="CAO PSA OUR"
+<= Recv header, 44 bytes (0x2c)
+0000: Content-Type: text/html;charset=ISO-8859-1
+<= Recv header, 22 bytes (0x16)
+0000: Content-Language: en
+== Info: Added cookie WarwickSSO="trkysfjsfvrengmukgcdtbxgpnquomwwowricfgkvmorrovsio" for domain warwick.ac.uk, path /, expire 0
+<= Recv header, 106 bytes (0x6a)
+0000: Set-Cookie: WarwickSSO=trkysfjsfvrengmukgcdtbxgpnquomwwowricfgkv
+0040: morrovsio; Domain=.warwick.ac.uk; Path=/
+== Info: Added cookie SSORememberMe="false" for domain websignon.warwick.ac.uk, path /origin, expire 1455208187
+<= Recv header, 118 bytes (0x76)
+0000: Set-Cookie: SSORememberMe=false; Domain=websignon.warwick.ac.uk;
+0040:  Expires=Thu, 11-Feb-2016 16:29:47 GMT; Path=/origin
+== Info: Added cookie SSO-TFT="rnyorbjfjwondendbfjvhypdvkrvtojlgancpugmmqfvrqcmyg" for domain websignon.warwick.ac.uk, path /origin, expire 1486744187
+<= Recv header, 165 bytes (0xa5)
+0000: Set-Cookie: SSO-TFT=rnyorbjfjwondendbfjvhypdvkrvtojlgancpugmmqfv
+0040: rqcmyg; Domain=websignon.warwick.ac.uk; Expires=Fri, 10-Feb-2017
+0080:  16:29:47 GMT; Path=/origin; Secure
+== Info: Added cookie SSO-LTC="aleqropwergffxvbptdeqitfxmommjbmodibejrlcihvdwcmrg" for domain warwick.ac.uk, path /, expire 0
+<= Recv header, 103 bytes (0x67)
+0000: Set-Cookie: SSO-LTC=aleqropwergffxvbptdeqitfxmommjbmodibejrlcihv
+0040: dwcmrg; Domain=.warwick.ac.uk; Path=/
+== Info: Added cookie SSO-TGC="uuufrdnuxpxmllutnyolrxewjoclvrewouavjwcpspucmtkjrd" for domain websignon.warwick.ac.uk, path /origin, expire 0
+<= Recv header, 126 bytes (0x7e)
+0000: Set-Cookie: SSO-TGC=uuufrdnuxpxmllutnyolrxewjoclvrewouavjwcpspuc
+0040: mtkjrd; Domain=websignon.warwick.ac.uk; Path=/origin; Secure
+<= Recv header, 28 bytes (0x1c)
+0000: Transfer-Encoding: chunked
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 6 bytes (0x6)
+0000: 2000
+<= Recv data, 7032 bytes (0x1b78)
+0000: ...<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN
+0040: " "http://www.w3.org/TR/html4/transitional.dtd">.<html>.<head>.<
+0080: title>Signing in...</title>..  <meta http-equiv="Content-Type" c
+00c0: ontent="text/html; charset=iso-8859-1">.  .  <META NAME="robots"
+0100:  CONTENT="noindex,nofollow">.  .  .  <script type="text/javascri
+0140: pt">.    window.onunload = function() {.        var supressCachi
+0180: ng = true;.    };.  </script>.   .</head>..<body>..<div style="m
+01c0: argin: 2em; color: #666; font-family: sans-serif; padding-left: 
+0200: 20px; background-repeat: no-repeat; background-image: url(data:i
+0240: mage/gif;base64,R0lGODlhEAAQAPYAAP///wAAYPr6+5KSuoiItO7u9MjI3NjY
+0280: 5p6ewgAAYI6OuMbG2zIyf1JSk+zs8qamx5SUvPLy9oKCsBwccbKyzqSkxpqav/T0
+02c0: 9/j4+qioyM7O4EREigwMZ2Bgm97e6ujo8Ly81CoqejY2gUZGi9TU48TE2Tw8hU5O
+0300: kD4+hkhIjNDQ4crK3Vpal7S0z+rq8XBwpaysyri40rq6015emlxcmWJinIaGs+Dg
+0340: 635+rvz8/KKixBgYbiwse1ZWlQQEYlBQkczM3jg4glhYlhoacPDw9dbW5ZycweLi
+0380: 7Obm70BAh6qqySQkdiAgc66uzHJypkpKjjQ0gGpqodLS4sDA1yYmd3x8rUJCiVRU
+03c0: lAoKZggIZLCwzeTk7UxMj/b2+ba20WZmn2hooNzc6KCgwxISayIidQAAAAAAAAAA
+0400: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+0440: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH+GkNyZWF0ZWQgd2l0aCBhamF4bG9h
+0480: ZC5pbmZvACH5BAAIAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAHaIAA
+04c0: goMgIiYlg4kACxIaACEJCSiKggYMCRselwkpghGJBJEcFgsjJyoAGBmfggcNEx0f
+0500: lBiKDhQFlIoCCA+5lAORFb4AJIihCRbDxQAFChAXw9HSqb60iREZ1omqrIPdJCTe
+0540: 0SWI09GBACH5BAAIAAEALAAAAAAQABAAAAdrgACCgwc0NTeDiYozCQkvOTo9GTmD
+0580: Ky8aFy+NOBA7CTswgywJDTIuEjYFIY0JNYMtKTEFiRU8Pjwygy4ws4owPyCKwsMA
+05c0: JSTEgiQlgsbIAMrO0dKDGMTViREZ14kYGRGK38nHguHEJcvTyIEAIfkEAAgAAgAs
+0600: AAAAABAAEAAAB2iAAIKDAggPg4iJAAMJCRUAJRIqiRGCBI0WQEEJJkWDERkYAAUK
+0640: EBc4Po1GiKKJHkJDNEeKig4URLS0ICImJZAkuQAhjSi/wQyNKcGDCyMnk8u5rYrT
+0680: gqDVghgZlYjcACTA1sslvtHRgQAh+QQACAADACwAAAAAEAAQAAAHZ4AAgoOEhYaC
+06c0: JSWHgxGDJCQARAtOUoQRGRiFD0kJUYWZhUhKT1OLhR8wBaaFBzQ1NwAlkIszCQkv
+0700: sbOHL7Y4q4IuEjaqq0ZQD5+GEEsJTDCMmIUhtgk1lo6QFUwJVDKLiYJNUd6/hoEA
+0740: IfkEAAgABAAsAAAAABAAEAAAB2iAAIKDhIWGgiUlh4MRgyQkjIURGRiGGBmNhJWH
+0780: m4uen4ICCA+IkIsDCQkVACWmhwSpFqAABQoQF6ALTkWFnYMrVlhWvIKTlSAiJiVV
+07c0: PqlGhJkhqShHV1lCW4cMqSkAR1ofiwsjJyqGgQAh+QQACAAFACwAAAAAEAAQAAAH
+0800: Z4AAgoOEhYaCJSWHgxGDJCSMhREZGIYYGY2ElYebi56fhyWQniSKAKKfpaCLFlAP
+0840: hl0gXYNGEwkhGYREUywag1wJwSkHNDU3D0kJYIMZQwk8MjPBLx9eXwuETVEyAC/B
+0880: OKsuEjYFhoEAIfkEAAgABgAsAAAAABAAEAAAB2eAAIKDhIWGgiUlh4MRgyQkjIUR
+08c0: GRiGGBmNhJWHm4ueICImip6CIQkJKJ4kigynKaqKCyMnKqSEK05StgAGQRxPYZaE
+0900: NqccFgIID4KXmQBhXFkzDgOnFYLNgltaSAAEpxa7BQoQF4aBACH5BAAIAAcALAAA
+0940: AAAQABAAAAdogACCg4SFggJiPUqCJSWGgkZjCUwZACQkgxGEXAmdT4UYGZqCGWQ+
+0980: IjKGGIUwPzGPhAc0NTewhDOdL7Ykji+dOLuOLhI2BbaFETICx4MlQitdqoUsCQ2v
+09c0: hKGjglNfU0SWmILaj43M5oEAOwAAAAAAAAAAAA==);">.Signed in. Continui
+0a00: ng to your destination&hellip;.</div>...    <form id="shibboleth
+0a40: " action="https://photos.warwick.ac.uk/photos/shire" method="pos
+0a80: t">...<input type="hidden" name="TARGET" value="https://photos.w
+0ac0: arwick.ac.uk/photos/photo.jpg?id=1490670" >..    <input type="hi
+0b00: dden" name="SAMLResponse" value="PFJlc3BvbnNlIHhtbG5zPSJ1cm46b2F
+0b40: zaXM6bmFtZXM6dGM6U0FNTDoxLjA6cHJvdG9jb2wiIHht.bG5zOnNhbWw9InVybj
+0b80: pvYXNpczpuYW1lczp0YzpTQU1MOjEuMDphc3NlcnRpb24iIHhtbG5zOnNh.bWxwP
+0bc0: SJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoxLjA6cHJvdG9jb2wiIElzc3VlSW5zd
+0c00: GFudD0i.MjAxNS0wMi0xMVQxNjoyOTo0Ny44NzVaIiBNYWpvclZlcnNpb249IjEi
+0c40: IE1pbm9yVmVyc2lvbj0i.MSIgUmVjaXBpZW50PSJodHRwczovL3Bob3Rvcy53YXJ
+0c80: 3aWNrLmFjLnVrL3Bob3Rvcy9zaGlyZSIg.UmVzcG9uc2VJRD0iYTM2N2FlMWNjMj
+0cc0: ZmMGEzMWE5YWJmZDk2NGZjMTIwZmUiPjxkczpTaWduYXR1.cmUgeG1sbnM6ZHM9I
+0d00: mh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiPgo8ZHM6U2ln.bmVk
+0d40: SW5mbz4KPGRzOkNhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRw
+0d80: Oi8vd3d3.LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiPjwvZHM6Q2Fub25
+0dc0: pY2FsaXphdGlvbk1ldGhv.ZD4KPGRzOlNpZ25hdHVyZU1ldGhvZCBBbGdvcml0aG
+0e00: 09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAv.MDkveG1sZHNpZyNyc2Etc2hhMSI+P
+0e40: C9kczpTaWduYXR1cmVNZXRob2Q+CjxkczpSZWZlcmVuY2Ug.VVJJPSIjYTM2N2Fl
+0e80: MWNjMjZmMGEzMWE5YWJmZDk2NGZjMTIwZmUiPgo8ZHM6VHJhbnNmb3Jtcz4K.PGR
+0ec0: zOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDk
+0f00: veG1sZHNp.ZyNlbnZlbG9wZWQtc2lnbmF0dXJlIj48L2RzOlRyYW5zZm9ybT4KPG
+0f40: RzOlRyYW5zZm9ybSBBbGdv.cml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvM
+0f80: TAveG1sLWV4Yy1jMTRuIyI+PGVjOkluY2x1.c2l2ZU5hbWVzcGFjZXMgeG1sbnM6
+0fc0: ZWM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4.Yy1jMTRuIyIgUHJ
+1000: lZml4TGlzdD0iY29kZSBkcyBraW5kIHJ3IHNhbWwgc2FtbHAgdHlwZW5zICNk.ZW
+1040: ZhdWx0Ij48L2VjOkluY2x1c2l2ZU5hbWVzcGFjZXM+PC9kczpUcmFuc2Zvcm0+Cj
+1080: wvZHM6VHJh.bnNmb3Jtcz4KPGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0d
+10c0: HA6Ly93d3cudzMub3JnLzIw.MDAvMDkveG1sZHNpZyNzaGExIj48L2RzOkRpZ2Vz
+1100: dE1ldGhvZD4KPGRzOkRpZ2VzdFZhbHVlPmZ6.eU96WGlKYjA1QzhQdlhmcG5VWit
+1140: SdW5VND08L2RzOkRpZ2VzdFZhbHVlPgo8L2RzOlJlZmVyZW5j.ZT4KPC9kczpTaW
+1180: duZWRJbmZvPgo8ZHM6U2lnbmF0dXJlVmFsdWU+CmpWVTFJTFV6cnJXNmtWejJK.V
+11c0: DF1K0NOOE9aRllEVnd1bXpHVkM4MjJFRDFkZzJHRzI3OXpQUFd5b1prNElmMlhsU
+1200: 01iWlJUWkVn.WVMKcXZoVUlqL3pLanZmVVp6YjM2dnUrNzZzTjk2MGppenV2OXZW
+1240: OHBPM0hOcUJQTUlVc2NoaktC.WGI0MThtM215UFF5M1VEcmhrd0ZkQwpObDc2OWV
+1280: tTDYwZWs5L3h0cUZnY2VZR09xKy9Qc1NWcEFY.a210QjZkUUdhUGhxWHNJQ3J3OG
+12c0: 13SnZIRmxPTHBkeDFQZFFCVUhGUVFDCkQ1dm52OW91UCtXeDdV.b3JJYXd3UDNvR
+1300: U00WW94NHJ5dCtJNzV2QzRTcVNicVFqSkNvL0R2UGZaRjVxMVNlS3QzMDdUQlpB.
+1340: VC82VU4KRFJtY0Y4YjlsZlA0TGZEdE1oUXBna0s3aHZaWDc1LzdWTHBldmc9PQo8
+1380: L2RzOlNpZ25h.dHVyZVZhbHVlPgo8ZHM6S2V5SW5mbz4KPGRzOlg1MDlEYXRhPgo
+13c0: 8ZHM6WDUwOUNlcnRpZmljYXRl.PgpNSUlFMGpDQ0E3cWdBd0lCQWdJUkFMbnd4Zm
+1400: NtMTVWOHcrc2Q4dUpYVTFNd0RRWUpLb1pJaHZj.TkFRRUZCUUF3TmpFTE1Ba0dBM
+1440: VVFCkJoTUNUa3d4RHpBTkJnTlZCQW9UQmxSRlVrVk9RVEVXTUJR.R0ExVUVBeE1O
+1480: VkVWU1JVNUJJRk5UVENCRFFUQWVGdzB4TVRBM01EY3cKTURBd01EQmFGdzB4TkRB
+14c0: .M01EWXlNelU1TlRsYU1JR2tNUXN3Q1FZRFZRUUdFd0pIUWpFV01CUUdBMVVFQ0J
+1500: NTlYyVnpkQ0JO.YVdScwpZVzVrY3pFUk1BOEdBMVVFQnhNSVEyOTJaVzUwY25reE
+1540: hqQWNCZ05WQkFvVEZWVnVhWFps.Y25OcGRIa2diMllnVjJGeWQybGphekVvCk1DW
+1580: UdBMVVFQ3hNZlNXNW1iM0p0WVhScGIyNGdWR1Zq.YUc1dmJHOW5lU0JUWlhKMmFX
+15c0: TmxjekVnTUI0R0ExVUVBeE1YZDJWaWMybG4KYm05dUxuZGhjbmRw.WTJzdVlXTXV
+1600: kV3N3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ3F
+1640: Q.R2RoVlBjSQp2eDB0cklHMnNyWHdZek9uZHJrZVFxcUdWZHUvbndsdEZORW5XM2
+1680: hha2hRS3B2ZlhX.cUVGWVI2ZFdoYktmd0lqZTE0R2dVaHZHN1I0CmtYc2h5VzQ4Y
+16c0: 0sxOTk3dk56Ri9ucXgrQ2hrajZK.aXZIZ01HaXdFR25lUWZsUnRUcytXR2gzTzdt
+1700: Q0hxdS8yVDl4clVNZjBzSDhlckgKaFZyK3FlMGRm.OExiWUN0eTdDRWVZV1lpT3B
+1740: QQVpHWEdjbWYzanJlSHp0TDkrNlZlSDNUZTY0WERmd2tPY2NzWnZP.RGdkR3czcU
+1780: 9aTApZanVTYXZXeUpxNGlDakp2SURaazNHbHk4Z0w3dHZxNXpPN1BHVTBYd1BleV
+17c0: E1.VVdBcDdPWFZWaFV5R0x1Y05lZGdzVVI3Nnp5Uk9vCmpCa08yZWFVVjJjWmRWT
+1800: 1FUbVFrcCtKWWt3.TlBBZ01CQUFHamdnRnFNSUlCWmpBZkJnTlZIU01FR0RBV2dC
+1840: UU12Wk5vRFBQZXE2TkoKYXlzM1Yw.ZnFrT081N1RBZEJnTlZIUTRFRmdRVVE0Z3d
+1880: 3Z0tXZGYxVTY0Ymg1RE9PUTZyb1JBb3dEZ1lEVlIw.UEFRSC9CQVFEQWdXZwpNQX
+18c0: dHQTFVZEV3RUIvd1FDTUFBd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFV.SEF3RUdDQ
+1900: 3NHQVFVRkJ3TUNNQmdHQTFVZElBUVJNQTh3CkRRWUxLd1lCQkFHeU1RRUNBaDB3T
+1940: 2dZ.RFZSMGZCRE13TVRBdm9DMmdLNFlwYUhSMGNEb3ZMMk55YkM1MFkzTXVkR1Z5
+1980: Wlc1aExtOXkKWnk5.VVJWSkZUa0ZUVTB4RFFTNWpjbXd3YlFZSUt3WUJCUVVIQVF
+19c0: FRVlUQmZNRFVHQ0NzR0FRVUZCekFD.aGlsb2RIUndPaTh2WTNKMApMblJqY3k1MF
+1a00: pYSmxibUV1YjNKbkwxUkZVa1ZPUVZOVFRFTkJMbU55.ZERBbUJnZ3JCZ0VGQlFjd
+1a40: 0FZWWFhSFIwY0RvdkwyOWpjM0F1CmRHTnpMblJsY21WdVlTNXZjbWN3.SWdZRFZS
+1a80: MFJCQnN3R1lJWGQyVmljMmxuYm05dUxuZGhjbmRwWTJzdVlXTXVkV3N3RFFZSktv
+1ac0: WkkK.aHZjTkFRRUZCUUFEZ2dFQkFMdzUrWkZJak9sb1ZjUHJzdDZhMzlIRWZXWm9
+1b00: aMEVwOFlkdEJYVG54.WlpocmYzNm8xM2dJalFoaGlZRwpJTVRCYjVZY2VpNGN0b2
+1b40: NKVGYxM0krcFZkTUJzQ0MwMDFCSmt0.VnF6Z2tObmQrOTFkZ0xPOUE1b
+<= Recv data, 1160 bytes (0x488)
+0000: GhtZFNCRmU0c21ETVVUeURVb0xsCnU0KzV1TTY4QlN5MXNPM1Q3.SU1xa0x3Y2xp
+0040: T3cvb3hPUWxBMlNmdHc4SGFPdlhIMmg5YWpjWFFDZ1oyK0RoMnVFNDQzM25veFFN
+0080: .cjEKR1c2UlJNam95V2EwNFlCYURhanBBU1VreWp1NlJUeXZnekkrVldQOWltb2F
+00c0: ielE2QkhadlZn.ZDFBVW1OVUVyOW5TK0lmall6aDRJRwpTRG54ZGFsbkE1NE5vQ0
+0100: s4NlFaYTBOVW9HcFNpTFByREg2.OW9QdkhNblJhcXdzWlArTC9ZLzZRPQo8L2RzO
+0140: lg1MDlDZXJ0aWZpY2F0ZT4KPC9kczpYNTA5RGF0.YT4KPC9kczpLZXlJbmZvPjwv
+0180: ZHM6U2lnbmF0dXJlPjxTdGF0dXM+PFN0YXR1c0NvZGUgVmFsdWU9.InNhbWxwOlN
+01c0: 1Y2Nlc3MiPjwvU3RhdHVzQ29kZT48L1N0YXR1cz48QXNzZXJ0aW9uIHhtbG5zPSJ
+0200: 1.cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoxLjA6YXNzZXJ0aW9uIiBBc3NlcnRpb2
+0240: 5JRD0iYjM0MGY1.ZTZkOGJmYmQ3NGY1ZjBlY2UwMWU2YWVhZDEiIElzc3VlSW5zd
+0280: GFudD0iMjAxNS0wMi0xMVQxNjoy.OTo0Ny44NzVaIiBJc3N1ZXI9InVybjptYWNl
+02c0: OmVkdXNlcnYub3JnLnVrOmF0aGVuczpwcm92aWRl.cjp3YXJ3aWNrLmFjLnVrIiB
+0300: NYWpvclZlcnNpb249IjEiIE1pbm9yVmVyc2lvbj0iMSI+PENvbmRp.dGlvbnMgTm
+0340: 90QmVmb3JlPSIyMDE1LTAyLTExVDE2OjI5OjQ3Ljg3NVoiIE5vdE9uT3JBZnRlcj
+0380: 0i.MjAxNS0wMi0xMVQxNjozNDo0Ny44NzVaIj48QXVkaWVuY2VSZXN0cmljdGlvb
+03c0: kNvbmRpdGlvbj48.QXVkaWVuY2U+dXJuOnBob3Rvcy53YXJ3aWNrLmFjLnVrOnBo
+0400: b3RvczpzZXJ2aWNlPC9BdWRpZW5j.ZT48L0F1ZGllbmNlUmVzdHJpY3Rpb25Db25
+0440: kaXRpb24+PC9Db25kaXRpb25zPjxBdXRoZW50aWNh.dGlvblN0YXRlbWVudCBBdX
+0480: RoZW50aW
+<= Recv data, 2 bytes (0x2)
+0000: 
+<= Recv data, 920 bytes (0x398)
+0000: 393
+0005: NhdGlvbkluc3RhbnQ9IjIwMTUtMDItMTFUMTY6Mjk6NDcu.ODc1WiIgQXV0aGVud
+0045: GljYXRpb25NZXRob2Q9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjEuMDph.bTp1
+0085: bnNwZWNpZmllZCI+PFN1YmplY3Q+PE5hbWVJZGVudGlmaWVyIEZvcm1hdD0idXJu
+00c5: OndlYnNp.Z25vbjp1dWlkIiBOYW1lUXVhbGlmaWVyPSJ1cm46bWFjZTplZHVzZXJ
+0105: 2Lm9yZy51azphdGhlbnM6.cHJvdmlkZXI6d2Fyd2ljay5hYy51ayI+bm52dm15dG
+0145: 5zZHZlaGpjaXR2dWxwa2xqZG5sdnNraHNt.cG9wdHVpbXh5cm5lZW1kZHE8L05hb
+0185: WVJZGVudGlmaWVyPjxTdWJqZWN0Q29uZmlybWF0aW9uPjxD.b25maXJtYXRpb25N
+01c5: ZXRob2Q+dXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6MS4wOmNtOmJlYXJlcjwv.Q29
+0205: uZmlybWF0aW9uTWV0aG9kPjwvU3ViamVjdENvbmZpcm1hdGlvbj48L1N1YmplY3Q
+0245: +PFN1Ympl.Y3RMb2NhbGl0eSBJUEFkZHJlc3M9IjEzNy4yMDUuMTkzLjc1Ij48L1
+0285: N1YmplY3RMb2NhbGl0eT48.L0F1dGhlbnRpY2F0aW9uU3RhdGVtZW50PjwvQXNzZ
+02c5: XJ0aW9uPjwvUmVzcG9uc2U+" >..    ..    <noscript>....<input type=
+0305: "submit" value="Continue...">.....</noscript>..    ...</form>.<s
+0345: cript type="text/javascript">.document.forms[0].submit();.</scri
+0385: pt>.</body>.</html>
+<= Recv data, 2 bytes (0x2)
+0000: 
+<= Recv data, 5 bytes (0x5)
+0000: 0
+0003: 
+== Info: Connection #0 to host websignon.warwick.ac.uk left intact
