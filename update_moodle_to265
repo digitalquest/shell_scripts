@@ -68,16 +68,15 @@ git status
 #change as needed
 git add <file>
 git commit -m "after update to 2.6.5"
-# push our newly merged local branch to remote branch MOODLE_26_STABLE on origin
-git push -u origin MOODLE_265:MOODLE_26_STABLE
-
+#
 # branch MOODLE_26_STABLE is renamed MOODLE_261
 git branch -m MOODLE_26_STABLE MOODLE_261
 # current branch (MOODLE_265) is renamed MOODLE_26_STABLE
 git branch -m MOODLE_26_STABLE
 # delete branch MOODLE_26_GITHUB
 git branch -d MOODLE_26_GITHUB
-#
+# push our newly merged local branch to remote branch MOODLE_26_STABLE on origin
+git push -u origin MOODLE_26_STABLE
 #END git SEQUENCE
 #
 # exucute Moodle upgrade script and disable maintenance mode
@@ -85,3 +84,5 @@ git branch -d MOODLE_26_GITHUB
 #sudo -u apache /usr/bin/php admin/cli/maintenance.php --disable
 /usr/bin/php admin/cli/upgrade.php
 /usr/bin/php admin/cli/maintenance.php --disable
+
+# visit the website administration page to finish the upgrade
