@@ -1,0 +1,4 @@
+#!/bin/bash
+source ~/.ulcc_credentials
+echo $password
+sshfs $username@$host: $HOME/ulcc

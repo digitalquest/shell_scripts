@@ -1,0 +1,1 @@
+sshfs admin@plato.warwick.ac.uk:/data/www $HOME/platoserver

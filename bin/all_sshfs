@@ -1,0 +1,16 @@
+#!/bin/sh
+. $HOME/.credentials
+echo "*** Mount the folders via sshfs ***"
+echo "*** My files ***"
+echo "myfiles password"
+sshfs u1374759@myfiles.warwick.ac.uk: $HOME/myfiles/
+echo "*** Moodle test ***"
+echo "moodle-test password"
+sshfs admin@moodle-test.warwick.ac.uk:/data/www $HOME/moodle-test/
+echo "*** Mahara test ***"
+echo "mahara-test password"
+sshfs admin@mahara-test.warwick.ac.uk:/data/www $HOME/mahara-test/
+echo "*** MoodleX ***"
+echo "moodleX password"
+sshfs admin@moodlex.warwick.ac.uk:/data/www $HOME/moodlex/
+echo "*** All done ***"

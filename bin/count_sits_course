@@ -1,0 +1,1 @@
+egrep '^\"[a-zA-Z]{2,3}[1-9]' myfiles/H_Drive/moodle_course.csv |wc -l

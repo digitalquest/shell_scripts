@@ -1,0 +1,1 @@
+sshfs admin@researchdb.warwick.ac.uk:/data $HOME/researchdb

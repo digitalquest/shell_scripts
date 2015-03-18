@@ -1,0 +1,5 @@
+for i in {1..6}
+do
+  git rm file$i.txt
+  git commit -m "remove empty file$i.txt"
+done

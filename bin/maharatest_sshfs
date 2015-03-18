@@ -1,0 +1,1 @@
+sshfs admin@mahara-test.warwick.ac.uk:/data/www $HOME/mahara-test
