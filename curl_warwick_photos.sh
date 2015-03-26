@@ -1,7 +1,8 @@
 #!/bin/bash
+# first request with curl to log in
 curl --user-agent "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)" --trace-ascii websignon.txt --cookie-jar newcookies.txt --data "shire=https%3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fshire&providerId=urn%3Aphotos.warwick.ac.uk%3Aphotos%3Aservice&target=https%3A%2F%2Fphotos.warwick.ac.uk%2Fphotos%2Fphoto.jpg%3Fid%3D1490670&userName=u1374759&password=m1cr0d1g1t4l" https://websignon.warwick.ac.uk/origin/hs
 
-
+#second request to photos.warwick to get the photo. use coockes from log in request
 wget -O 1490670.jpg --load-cookies newcookies.txt \
      --user-agent="Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)" \
      --limit-rate=200k \
