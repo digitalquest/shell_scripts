@@ -35,11 +35,16 @@ To update dependent views in the appropriate moodle_sits_management_???2 databas
 
  
 *Unlink google analytics*
+
 **With SQL**
+
     UPDATE mdl_config_plugins  SET `value` = 0  WHERE `plugin` =  'theme_ucl' AND ` name ` =  'useanalytics' ;
     UPDATE mdl_config_plugins  SET `value` =  '' WHERE `plugin` =  'theme_ucl' AND ` name ` =  'analyticsid' ;
+
 OR
+
 **With moosh**
+
     moosh config-set useanalytics 0 theme_uc
     moosh config-set analyticsid UA-0000000-0 theme_ucl
  
@@ -47,6 +52,7 @@ OR
 *Site administration >> Front page >> Front page settings*
 
 *Set cookie prefix*
+
     moosh config-set sessioncookie ucl_devxxxxxx
     
 OR
@@ -67,25 +73,34 @@ OR
 Global string replace (host URL).
 
     php admin/tool/replace/cli/replace.php --search=' https://moodle.ucl.ac.uk ' --replace='https://vxx.moodle-dev.ucl.ac.uk' --non-interactive
+    
 OR
 
 https://moodle-snapshot.ucl.ac.uk/16-17/admin/tool/replace/
+
 Search:  ' https://moodle.ucl.ac.uk ' 
+
 Replace: 'https://vxx.moodle-dev.ucl.ac.uk'
  
 **Changes to site settings:**
+
 *Remove guest login button - settings->siteadmin->plugins->authentication->manage auth->login button=hide*
+
     moosh config-set guestloginbutton 0
  
 *Security > Site policies > Site policy URL = http://moodle-archive.ucl.ac.uk/yy-yy/policy/about_the_archive.html (update yy with 10-11, 11-12 etc)*
+
     moosh config-set sitepolicy ''
     moosh config-set sitepolicyguest ''
  
 Change cookie prefix to prevent session clashes (as more than one moodle instance on same server) : 
+
 *admin->server->session handling*
+
     moosh config-set sessioncookie uclmoodle_devxxx
- 
+    
 *mdl_course = set all guest access to 0 and all enrolment options to 0 – this disables all enrolments, guest functionality and student course ‘browsing’ *
+
     moosh config-set logguests 0
     moosh config-set allowguestmymoodle 0
     moosh config-set autologinguests 0 
@@ -113,6 +128,7 @@ e. Change dataroot to '/data/moodle'
     moosh config-set noemailever 1
  
 Draft: to be reviwed/edited
+
     moosh config-set sessioncookie ucl_devxxxxxx
     moosh config-set sesskey ZJtr2016_17
 
@@ -129,10 +145,14 @@ Draft: to be reviwed/edited
     UPDATE mdl_config_plugins  SET `value` = ''  WHERE `plugin` =  'theme_ucl' AND ` name ` =  'marketing2image' ;
     UPDATE mdl_config_plugins  SET `value` =  '' WHERE `plugin` =  'theme_ucl' AND ` name ` =  'marketing3image' ;
     UPDATE mdl_config_plugins  SET `value` =  '' WHERE `plugin` =  'theme_ucl' AND ` name ` =  'marketing4image' ;
-*from the command line
-unset the history so that the password is not saved *
+    
+*from the command line*
+*unset the history so that the password is not saved *
+
     unset HISTFILE
+    
 *edit as appropriate* 
+
     DB_USER='moodle_xxx' 
     DB_PASSWORD='<in keepass>' 
     DB_NAME='moodle_xxx'
